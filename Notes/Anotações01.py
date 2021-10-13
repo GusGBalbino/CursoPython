@@ -67,6 +67,7 @@ while x < 10:
 # Pequenos loops em que 
 print('Acabou')
 '''
+'''
 # Calculadora Básica
 while True:
     print()
@@ -96,3 +97,24 @@ while True:
 
     if brk == 'y':
         break
+'''
+'''
+# Iteração
+frase = 'o rato roeu a roupa do rei de roma'
+tam_frase = len(frase)
+contador = 0
+nova_string = ''
+
+input_do_usuario = input('Qual letra deseja colocar maiúscula? ')
+
+while contador < tam_frase:
+    letra = frase[contador]
+    if letra == input_do_usuario:
+        nova_string += input_do_usuario.upper()
+    else:
+        nova_string += letra
+    contador += 1
+
+print('Frase original: ', frase)
+print('Nova frase: ', nova_string)
+'''
