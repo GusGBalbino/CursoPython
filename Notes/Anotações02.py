@@ -24,7 +24,7 @@ l2 = list(range(1, 11))  # Range pra fazer lista
 # print(max(l2))     Maior valor da lista
 # print(min(l2))     Menor valor da lista
 
-
+'''
 secreto = 'perfume'
 digitadas = []
 while True:
@@ -52,3 +52,17 @@ while True:
         break
     else:
         print(f'Palavra: {secreto_temp}')
+'''
+
+# Funções de split, join e enumerate
+
+string = 'A lâmina que não se vê, é a mais mortífera.'
+lista = string.split(' ')
+string2 = ','.join(lista)
+
+print(lista)
+print(string2)
+
+for v1, v2 in enumerate(lista):
+    print(v1, v2)
+# v1: indice v2: valor
