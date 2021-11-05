@@ -55,7 +55,7 @@ while True:
 '''
 
 # Funções de split, join e enumerate
-
+'''
 string = 'A lâmina que não se vê, é a mais mortífera.'
 lista = string.split(' ')
 string2 = ','.join(lista)
@@ -66,3 +66,30 @@ print(string2)
 for v1, v2 in enumerate(lista):
     print(v1, v2)
 # v1: indice v2: valor
+'''
+'''
+# Inversão de variáveis
+x = 10
+y = "Gus"
+x, y = y, x
+print(f'x={x} e y={y}')
+'''
+
+'''
+# Operador Ternário
+
+logged_user = False
+msg = "User On." if (logged_user) else "User Off."
+
+print(msg)
+
+
+idade = input('Qual sua idade? ')
+
+if not idade.isnumeric():
+    print('Digite apenas números.')
+else:
+    idade = int(idade)
+    acess = "Acesso liberado." if (idade >= 18) else "Acesso negado."
+    print(acess)
+'''
