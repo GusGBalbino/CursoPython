@@ -75,21 +75,21 @@ caso contrário, retorne o número enviado.
 # RESPOSTAS:
 
 # A) :
-
-
+'''
 def saudacao(msg, name):
     print(f'{msg} {name}!')
 
 
 saudacao('Hey', 'Gus')
 
-
+#B) :
 def soma(n1, n2, n3):
     print(n1+n2+n3)
 
 
 soma(1, 2, 3)
 
+#C) :
 
 def num(n1, n2):
     return (n1 * (n2/100))
@@ -104,6 +104,8 @@ if prc:
 else:
     print('Conta inválida.')
 
+#D) :
+
 if (prc % 3 == 0):
     print('Fizz')
 elif (prc % 5 == 0):
@@ -112,3 +114,45 @@ elif (prc % 3 == 0 and prc % 5 == 0):
     print('FizzBuzz')
 else:
     print(f'Nenhum dos dois! {prc}')
+'''
+
+# Exercícios Propostos 03
+'''
+1 - Crie uma função1 que recebe uma função2 como parâmetro e retorne o valor da função2 executada
+
+2 - Crie uma função1 que recebe uma função2 como parâmetro e retorne o valor da função2
+executada. Faça a função1 executar duas funções que recebam um número diferente de argumentos.
+'''
+
+# 1)
+'''
+def saudacao():
+    return 'Hi!'
+
+
+def master(fun):
+    return fun()
+
+
+execute = master(saudacao)
+print(execute)
+'''
+# 2
+
+
+def master(function, *args, **kwargs):
+    return function(*args, **kwargs)
+
+
+def say_hi(name):
+    return f'Hi {name}!'
+
+
+def saudacao(name, saudacao):
+    return f'{saudacao} {name}!'
+
+
+execute = master(say_hi, 'Gus')
+execute2 = master(saudacao, 'Gus', saudacao='Boa noite')
+print(execute)
+print(execute2)
