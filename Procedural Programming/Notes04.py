@@ -87,7 +87,7 @@ qtd_questions = len(questions)
 porc_right = (correct_answers / qtd_questions * 100)
 print(f'Your hit percentage is: {porc_right}%')
 '''
-
+'''
 # Sets in python
 # add, update, clear, discard
 # union (|)
@@ -105,3 +105,4 @@ print(l1)
 l1 = list(l1)
 
 print(l1)
+'''
