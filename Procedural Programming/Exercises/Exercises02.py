@@ -1,4 +1,5 @@
 """
+1 -
 -> É uma lista de listas de números inteiros
 -> As listas internas tem o tamanho de 10 elementos
 -> As listas internas contém números entre 1 a 10 e eles podem ser duplicados
@@ -13,6 +14,7 @@ Exercício
                 [1, 2, 3, 4, 5, 6] -> Retorne -1 (não tem duplicados)
             Se não encontrar duplicados na lista, retorne -1
 """
+'''
 lista_de_listas_de_inteiros = [
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     [9, 1, 8, 9, 9, 7, 2, 1, 6, 8],
@@ -44,3 +46,13 @@ def find_duplicate1(param_list_inteiros):
 for list_inteiros in lista_de_listas_de_inteiros:
     print(
         f'List = {list_inteiros} | Duplicate Number = {find_duplicate1(list_inteiros)}')
+'''
+# 2 -
+
+
+numbers = '0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789'
+numb = 10
+list1 = [numbers[i:i + numb] for i in range(0, len(numbers), numb)]
+return1 = '.'.join(list1)
+print(list1)
+print(return1)
