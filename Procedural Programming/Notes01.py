@@ -1,4 +1,5 @@
 '''
+#----------------------------------------------------------------------------------------------------------#
 # Aula 31 e 32
 Formatação de valores com modificadores:
 :s - Texto(strings)
@@ -31,6 +32,8 @@ print(nome_formatado)  # @@Yasmim@@
 nome_3 = 'MaRiA FeRnAnDa'
 print(nome_3.title())  # Primeiras letras maiusculas
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 # Aula 33 - Manipulando Strings
 '''
 texto = 'GUSTAVO'  # 7 LETRAS - 0123456 - Indices (Espaços contam)
@@ -45,6 +48,8 @@ new_string2 = url[0::2]  # Pula de uma em uma letra da str
 print(new_string1)
 print(new_string2)
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 # Aula 34 - While
 x = 0
 '''
@@ -66,7 +71,10 @@ while x < 10:
     x += 1  # x = x + 1
 # Pequenos loops em que 
 print('Acabou')
+
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 '''
 # Calculadora Básica
 while True:
@@ -97,7 +105,10 @@ while True:
 
     if brk == 'y':
         break
+
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 '''
 # Iteração
 frase = 'o rato roeu a roupa do rei de roma'
