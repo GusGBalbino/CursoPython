@@ -71,6 +71,7 @@ print(f'You have to pay ${totalv}')
 
 
 '''
+# My solution 
 for product in cart:
     totalv.append(product[1])
 finalv = (sum(totalv))
