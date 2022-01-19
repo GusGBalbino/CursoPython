@@ -18,7 +18,7 @@ ex7 = [var if var % 3 == 0 and var % 8 == 0 else 0 for var in l3]
 
 print(ex7)
 '''
-
+'''
 # Dictionary Comprehension in Python
 lista4 = [('key', 'value'), ('key2', 'value2')]
 
@@ -27,3 +27,19 @@ print(d1)
 
 d2 = {f'key_{x}': x**2 for x in range(6)}
 print(d2)
+'''
+
+# Zip and Zip_longest
+from itertools import zip_longest, count
+
+ind = count()
+
+states = ['DF','MG','SP','BA','MT', 'PB']
+
+cities = ['Brasília', 'Belo Horizonte', 'São Paulo', 'Salvador']
+
+city_state = zip(ind,states, cities)
+#city_state = zip_longest(states, cities, fillvalue= 'City')
+
+for ind,states, cities in city_state:
+    print(f'{ind} - {cities} - {states}')

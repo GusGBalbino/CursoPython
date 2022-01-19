@@ -58,7 +58,7 @@ print(return1)
 '''
 
 #03 - 
-
+''''
 cart = []
 
 cart.append(('Product1', 30))
@@ -70,10 +70,35 @@ totalv = sum([float(y) for x,y in cart])
 print(f'You have to pay ${totalv}')
 
 
-'''
+
 # My solution 
 for product in cart:
     totalv.append(product[1])
 finalv = (sum(totalv))
 print(f'You have to pay ${finalv}')
+'''
+
+#04 - 
+#Sistema de desconto possível.
+from itertools import zip_longest
+
+list_a = [1,2,3,4,10,12,14]
+list_b = [1,2,3,4]
+
+list_sum = [x+y for x,y in zip_longest(list_a, list_b, fillvalue= 0)]
+print(list_sum)
+
+
+'''
+Res 2
+for i, _ in enumerate(list_b):
+    list_sum.append(list_a[i]+list_b[i])
+print(list_sum)
+'''
+
+'''
+Res 1
+for i in range(len(list_b)):
+    list_sum.append(list_a[i]+list_b[i])
+print(list_sum)
 '''
