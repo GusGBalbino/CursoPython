@@ -48,11 +48,31 @@ for list_inteiros in lista_de_listas_de_inteiros:
         f'List = {list_inteiros} | Duplicate Number = {find_duplicate1(list_inteiros)}')
 '''
 # 2 -
-
-
+'''
 numbers = '0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789'
 numb = 10
 list1 = [numbers[i:i + numb] for i in range(0, len(numbers), numb)]
 return1 = '.'.join(list1)
 print(list1)
 print(return1)
+'''
+
+#03 - 
+
+cart = []
+
+cart.append(('Product1', 30))
+cart.append(('Product2', 20))
+cart.append(('Product3', 50))
+cart.append(('Product4', 40))
+
+totalv = sum([float(y) for x,y in cart])
+print(f'You have to pay ${totalv}')
+
+
+'''
+for product in cart:
+    totalv.append(product[1])
+finalv = (sum(totalv))
+print(f'You have to pay ${finalv}')
+'''
