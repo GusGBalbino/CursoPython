@@ -6,7 +6,10 @@ d1[2] = 'key2 value'
 d2 = dict(key3="key3 value")
 
 print(d1, d2)
+
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 '''
 d1 = {
     'str': 'value',
@@ -25,6 +28,8 @@ if d1.get('nkey') is not None:
 print('Continue...')
 print(d1)
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 '''
 clients = {
     'Client1': {
@@ -42,6 +47,8 @@ for clients_key, clients_values in clients.items():
     for data_key, data_value in clients_values.items():
         print(f'\t{data_key} = {data_value}')
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 '''
 #Questions with dict
 
@@ -87,6 +94,8 @@ qtd_questions = len(questions)
 porc_right = (correct_answers / qtd_questions * 100)
 print(f'Your hit percentage is: {porc_right}%')
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 '''
 # Sets in python
 # add, update, clear, discard

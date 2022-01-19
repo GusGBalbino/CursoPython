@@ -25,6 +25,8 @@ l2 = list(range(1, 11))  # Range pra fazer lista
 # print(min(l2))     Menor valor da lista
 
 '''
+#----------------------------------------------------------------------------------------------------------#
+
 secreto = 'perfume'
 digitadas = []
 while True:
@@ -53,6 +55,7 @@ while True:
     else:
         print(f'Palavra: {secreto_temp}')
 '''
+#----------------------------------------------------------------------------------------------------------#
 
 # Funções de split, join e enumerate
 '''
