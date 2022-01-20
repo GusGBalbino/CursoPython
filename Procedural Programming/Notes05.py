@@ -84,7 +84,7 @@ for group in product(person, repeat=2):
 
 #Groupby
 
-students =
+students = [
     {'Name': 'Gus', 'Grade': 'A+'}
     {'Name': 'Yas', 'Grade': 'B-'}
     {'Name': 'Bea', 'Grade': 'C+'}
@@ -94,8 +94,7 @@ students =
     {'Name': 'Maria', 'Grade': 'B+'}
     {'Name': 'Vic', 'Grade': 'C-'}
     {'Name': 'João', 'Grade': 'F'}
-    {'Name': 'Nath', 'Grade': 'D+'}
-
+    {'Name': 'Nath', 'Grade': 'D+'} ]
 
 students.sort(key=lambda item: item('Grade'))
 
