@@ -18,6 +18,7 @@ ex7 = [var if var % 3 == 0 and var % 8 == 0 else 0 for var in l3]
 
 print(ex7)
 '''
+
 '''
 # Dictionary Comprehension in Python
 lista4 = [('key', 'value'), ('key2', 'value2')]
@@ -29,6 +30,7 @@ d2 = {f'key_{x}': x**2 for x in range(6)}
 print(d2)
 '''
 
+'''
 # Zip and Zip_longest
 from itertools import zip_longest, count
 
@@ -43,3 +45,29 @@ city_state = zip(ind,states, cities)
 
 for ind,states, cities in city_state:
     print(f'{ind} - {cities} - {states}')
+'''
+# Group By
+from itertools import groupby
+
+students = [
+    {'Name':'Gus', 'Grade':'A'},
+    {'Name':'Yas', 'Grade':'A'},
+    {'Name':'Lopes', 'Grade':'B'},
+    {'Name':'Marcelo', 'Grade':'B'},
+    {'Name':'Bea', 'Grade':'C'},
+    {'Name':'Julian', 'Grade':'C'},
+    {'Name':'Maria', 'Grade':'D'},
+    {'Name':'Gabi', 'Grade':'D'},
+    {'Name':'Malu', 'Grade':'F'},
+    {'Name':'Daniel', 'Grade':'F'},
+]
+
+order = lambda item: item['Grade']
+students.sort(key=order)
+students_groups = groupby(students, order)
+
+for grouping, grouping_value in students_groups:
+    print(f'Grouping {grouping} : ')
+    for students in grouping_value:
+        print(students)
+    print()
