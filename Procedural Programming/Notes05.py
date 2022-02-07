@@ -18,6 +18,7 @@ ex7 = [var if var % 3 == 0 and var % 8 == 0 else 0 for var in l3]
 
 print(ex7)
 '''
+#----------------------------------------------------------------------------------------------------------#
 
 '''
 # Dictionary Comprehension in Python
@@ -29,6 +30,7 @@ print(d1)
 d2 = {f'key_{x}': x**2 for x in range(6)}
 print(d2)
 '''
+#----------------------------------------------------------------------------------------------------------#
 
 '''
 # Zip and Zip_longest
@@ -45,6 +47,8 @@ city_state = zip(ind,states, cities)
 
 for ind,states, cities in city_state:
     print(f'{ind} - {cities} - {states}')
+'''
+#----------------------------------------------------------------------------------------------------------#
 '''
 # Group By
 from itertools import groupby
@@ -71,3 +75,34 @@ for grouping, grouping_value in students_groups:
     for students in grouping_value:
         print(students)
     print()
+'''
+
+# Map
+
+products = [
+    {'name': 'p1', 'price': 13},
+    {'name': 'p2', 'price': 55.55},
+    {'name': 'p3', 'price': 4.99},
+    {'name': 'p4', 'price': 83.99},
+    {'name': 'p5', 'price': 10.90},
+    {'name': 'p6', 'price': 55.60},
+    {'name': 'p7', 'price': 2.90},
+    {'name': 'p8', 'price': 199.99},
+    {'name': 'p9', 'price': 12},
+    {'name': 'p10', 'price': 7.50},
+]
+
+persons = [
+    {'Name':'Gus', 'Age':'19'},
+    {'Name':'Yas', 'Age':'20'},
+    {'Name':'Lopes', 'Age':'20'},
+    {'Name':'Marcelo', 'Age':'21'},
+    {'Name':'Bea', 'Age':'21'},
+    {'Name':'Julian', 'Age':'22'},
+    {'Name':'Maria', 'Age':'23'},
+    {'Name':'Gabi', 'Age':'26'},
+    {'Name':'Malu', 'Age':'32'},
+    {'Name':'Daniel', 'Age':'44'},
+]
+
+list1 = [1,2,3,4,5,6,7,8,9,10]
