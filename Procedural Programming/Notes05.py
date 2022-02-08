@@ -49,6 +49,7 @@ for ind,states, cities in city_state:
     print(f'{ind} - {cities} - {states}')
 '''
 #----------------------------------------------------------------------------------------------------------#
+
 '''
 # Group By
 from itertools import groupby
@@ -93,16 +94,16 @@ products = [
 ]
 
 persons = [
-    {'Name':'Gus', 'Age':'19'},
-    {'Name':'Yas', 'Age':'20'},
-    {'Name':'Lopes', 'Age':'20'},
-    {'Name':'Marcelo', 'Age':'21'},
-    {'Name':'Bea', 'Age':'21'},
-    {'Name':'Julian', 'Age':'22'},
-    {'Name':'Maria', 'Age':'23'},
-    {'Name':'Gabi', 'Age':'26'},
-    {'Name':'Malu', 'Age':'32'},
-    {'Name':'Daniel', 'Age':'44'},
+    {'Name':'Gus', 'Age': 19},
+    {'Name':'Yas', 'Age':20},
+    {'Name':'Lopes', 'Age':21},
+    {'Name':'Marcelo', 'Age':21},
+    {'Name':'Bea', 'Age':21},
+    {'Name':'Julian', 'Age':22},
+    {'Name':'Maria', 'Age':23},
+    {'Name':'Gabi', 'Age':26},
+    {'Name':'Malu', 'Age':32},
+    {'Name':'Daniel', 'Age':19},
 ]
 
 list1 = [1,2,3,4,5,6,7,8,9,10]
